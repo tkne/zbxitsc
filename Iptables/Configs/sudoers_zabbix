@@ -1,0 +1,2 @@
+zabbix  ALL=(ALL)       NOPASSWD: /sbin/iptables -L INPUT -n
+zabbix  ALL=(ALL)       NOPASSWD: /usr/local/bin/iptablescheck.sh
