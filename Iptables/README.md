@@ -3,9 +3,9 @@ Iptables status check for Zabbix
 
 # Installation manual using installer shell script
 -----
-   * [On CentOS 6.x](#on-centos-6.x)
-   * [On CentOS 7.x](#on-centos-7.x)
-   * [On Debian 8.x](#on-debian-8.x)
+   * [On CentOS 6.x](#on-centos-6x)
+   * [On CentOS 7.x](#on-centos-7x)
+   * [On Debian 8.x](#on-debian-8x)
 
 
 
