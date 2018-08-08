@@ -1,7 +1,7 @@
 Iptables status check for Zabbix
 ======
 
-# Installation manual using installer shell script
+Installation manual using installer shell script
 
    * [On CentOS 6.x](#on-centos-6x)
    * [On CentOS 7.x](#on-centos-7x)
