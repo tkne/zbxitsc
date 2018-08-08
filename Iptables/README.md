@@ -24,7 +24,7 @@ Example output:
 ```
 ### Option: Include
 # Include=
-**Include=/etc/zabbix/zabbix_agentd.d/*.conf**
+__Include=/etc/zabbix/zabbix_agentd.d/*.conf__
 # Include=/usr/local/etc/zabbix_agentd.userparams.conf
 # Include=/usr/local/etc/zabbix_agentd.conf.d/
 # Include=/usr/local/etc/zabbix_agentd.conf.d/*.conf
@@ -57,7 +57,7 @@ Example output:
 ```
 ### Option: Include
 # Include=
-**Include=/etc/zabbix/zabbix_agentd.d/*.conf**
+__Include=/etc/zabbix/zabbix_agentd.d/*.conf__
 # Include=/usr/local/etc/zabbix_agentd.userparams.conf
 # Include=/usr/local/etc/zabbix_agentd.conf.d/
 # Include=/usr/local/etc/zabbix_agentd.conf.d/*.conf
@@ -92,7 +92,7 @@ Example output:
 # Include=
 #Include=/etc/zabbix/zabbix_agentd.d/*.conf
 # Include=/usr/local/etc/zabbix_agentd.userparams.conf
-**Include=/usr/local/etc/zabbix_agentd.conf.d/**
+__Include=/usr/local/etc/zabbix_agentd.conf.d/__
 # Include=/usr/local/etc/zabbix_agentd.conf.d/*.conf
 ```
 
