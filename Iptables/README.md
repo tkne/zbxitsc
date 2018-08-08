@@ -1,12 +1,15 @@
 Iptables status check for Zabbix
 ======
 
-Installation manual using installer shell script.
+# Installation manual using installer shell script
+-----
+   * [On CentOS 6.x](#on-centos-6.x)
+   * [On CentOS 7.x](#on-centos-7.x)
+   * [On Debian 8.x](#on-debian-8.x)
 
 
 
-
-## On CentOS 6.x:
+## On CentOS 6.x
 
 Open sudoers file in the editor (I'm using nano here. Choose whatever you feel comfortable with.)
 ```# nano /etc/sudoers```
@@ -24,7 +27,7 @@ Example output:
 ```
 ### Option: Include
 # Include=
-__Include=/etc/zabbix/zabbix_agentd.d/*.conf__
+Include=/etc/zabbix/zabbix_agentd.d/*.conf
 # Include=/usr/local/etc/zabbix_agentd.userparams.conf
 # Include=/usr/local/etc/zabbix_agentd.conf.d/
 # Include=/usr/local/etc/zabbix_agentd.conf.d/*.conf
@@ -39,7 +42,7 @@ When done, import the [**Template Linux OS - Iptables template**](https://github
 
 
 
-## On CentOS 7.x:
+## On CentOS 7.x
 
 Open sudoers file in the editor (I'm using nano here. Choose whatever you feel comfortable with.)
 ```# nano /etc/sudoers```
@@ -57,7 +60,7 @@ Example output:
 ```
 ### Option: Include
 # Include=
-__Include=/etc/zabbix/zabbix_agentd.d/*.conf__
+Include=/etc/zabbix/zabbix_agentd.d/*.conf
 # Include=/usr/local/etc/zabbix_agentd.userparams.conf
 # Include=/usr/local/etc/zabbix_agentd.conf.d/
 # Include=/usr/local/etc/zabbix_agentd.conf.d/*.conf
@@ -72,7 +75,7 @@ When done, import the [**Template Linux OS - Iptables template**](https://github
 
 
 
-## On Debian 8.x:
+## On Debian 8.x
 
 Open sudoers file in the editor (I'm using nano here. Choose whatever you feel comfortable with.)
 ```$ nano /etc/sudoers```
@@ -92,7 +95,7 @@ Example output:
 # Include=
 #Include=/etc/zabbix/zabbix_agentd.d/*.conf
 # Include=/usr/local/etc/zabbix_agentd.userparams.conf
-__Include=/usr/local/etc/zabbix_agentd.conf.d/__
+Include=/usr/local/etc/zabbix_agentd.conf.d/
 # Include=/usr/local/etc/zabbix_agentd.conf.d/*.conf
 ```
 
