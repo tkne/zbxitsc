@@ -8,6 +8,7 @@ Installation manual using installer shell script.
 
 ## On CentOS 6.x:
 
+Open sudoers file in the editor (I'm using nano here. Choose whatever you feel comfortable with.)
 ```# nano /etc/sudoers```
 
 Add the following:
@@ -23,7 +24,7 @@ Example output:
 ```
 ### Option: Include
 # Include=
-Include=/etc/zabbix/zabbix_agentd.d/*.conf
+**Include=/etc/zabbix/zabbix_agentd.d/*.conf**
 # Include=/usr/local/etc/zabbix_agentd.userparams.conf
 # Include=/usr/local/etc/zabbix_agentd.conf.d/
 # Include=/usr/local/etc/zabbix_agentd.conf.d/*.conf
@@ -40,6 +41,7 @@ When done, import the [**Template Linux OS - Iptables template**](https://github
 
 ## On CentOS 7.x:
 
+Open sudoers file in the editor (I'm using nano here. Choose whatever you feel comfortable with.)
 ```# nano /etc/sudoers```
 
 Add the following:
@@ -55,7 +57,7 @@ Example output:
 ```
 ### Option: Include
 # Include=
-Include=/etc/zabbix/zabbix_agentd.d/*.conf
+**Include=/etc/zabbix/zabbix_agentd.d/*.conf**
 # Include=/usr/local/etc/zabbix_agentd.userparams.conf
 # Include=/usr/local/etc/zabbix_agentd.conf.d/
 # Include=/usr/local/etc/zabbix_agentd.conf.d/*.conf
@@ -72,6 +74,7 @@ When done, import the [**Template Linux OS - Iptables template**](https://github
 
 ## On Debian 8.x:
 
+Open sudoers file in the editor (I'm using nano here. Choose whatever you feel comfortable with.)
 ```$ nano /etc/sudoers```
 
 Add the following:
@@ -89,7 +92,7 @@ Example output:
 # Include=
 #Include=/etc/zabbix/zabbix_agentd.d/*.conf
 # Include=/usr/local/etc/zabbix_agentd.userparams.conf
-Include=/usr/local/etc/zabbix_agentd.conf.d/
+**Include=/usr/local/etc/zabbix_agentd.conf.d/**
 # Include=/usr/local/etc/zabbix_agentd.conf.d/*.conf
 ```
 
