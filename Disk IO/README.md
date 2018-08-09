@@ -305,3 +305,7 @@ Restart Zabbix agent service:</br>
 ```$ service zabbix-agent restart```
 
 When done, import the [**Template Disk IO**](https://github.com/tkne/zbxitsc/blob/master/Disk%20IO/Templates/Template%20Disk%20IO.xml) and your're good to go.
+</br>
+</br>
+</br>
+Credits: https://github.com/grundic

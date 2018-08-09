@@ -325,3 +325,7 @@ Restart Zabbix agent service:</br>
 ```$ service zabbix-agent restart```
 
 When done, import the [**Template Linux OS - Iptables template**](https://github.com/tkne/zbxitsc/blob/master/Iptables/Templates/Template%20Linux%20OS%20-%20Iptables.xml) and your're good to go.
+</br>
+</br>
+</br>
+Credits: https://github.com/thecamels

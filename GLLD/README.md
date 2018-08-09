@@ -191,3 +191,7 @@ Add following lines (marked with a +) at exactly the same location as shown belo
 ```
 
 When done, proceed with the [**Disk IO status check setup for your Zabbix hosts**](https://github.com/tkne/zbxitsc/tree/master/Disk%20IO).
+</br>
+</br>
+</br>
+Credits: https://github.com/sepich
