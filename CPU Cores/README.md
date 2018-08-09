@@ -1,4 +1,4 @@
-CPU Cores Graphs for Zabbix
+CPU Core Monitoring Graph for Zabbix
 ======
 
 Download the template of your choice for either [Linux](https://github.com/tkne/zbxitsc/tree/master/CPU%20Cores/Linux) and/or [Windows](https://github.com/tkne/zbxitsc/tree/master/CPU%20Cores/Windows) and import to your Zabbix installation to monitor every CPU core on it's own.
