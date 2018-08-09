@@ -3,19 +3,21 @@ Iptables status check for Zabbix
 
 Installation guide using installer shell script
 
-   * [On CentOS 6.x](#on-centos-6x)
-   * [On CentOS 7.x](#on-centos-7x)
-   * [On Debian 8.x](#on-debian-8x)
+   * [On CentOS 6.x](#on-centos-6x-with-installer-shell-script)
+   * [On CentOS 7.x](#on-centos-7x-with-installer-shell-script)
+   * [On Debian 8.x](#on-debian-8x-with-installer-shell-script)
 
 
 Installation guide using step by step instructions **without** using installer shell script
 
-   * [On CentOS 6.x](#on-centos-6x)
-   * [On CentOS 7.x](#on-centos-7x)
-   * [On Debian 8.x](#on-debian-8x)
+   * [On CentOS 6.x](#on-centos-6x-manual-install)
+   * [On CentOS 7.x](#on-centos-7x-manual-install)
+   * [On Debian 8.x](#on-debian-8x-manual-install)
 
-
-
+</br>
+</br>
+</br>
+</br>
 
 ## On CentOS 6.x (with installer shell script)
 
@@ -47,8 +49,8 @@ If ```Include=/etc/zabbix/zabbix_agentd.d/*.conf``` or ```Include=/etc/zabbix/za
 
 When done, import the [**Template Linux OS - Iptables template**](https://github.com/tkne/zbxitsc/blob/master/Iptables/Templates/Template%20Linux%20OS%20-%20Iptables.xml) and your're good to go.
 
-
-
+</br>
+</br>
 
 ## On CentOS 7.x (with installer shell script)
 
@@ -80,8 +82,8 @@ If ```Include=/etc/zabbix/zabbix_agentd.d/*.conf``` or ```Include=/etc/zabbix/za
 
 When done, import the [**Template Linux OS - Iptables template**](https://github.com/tkne/zbxitsc/blob/master/Iptables/Templates/Template%20Linux%20OS%20-%20Iptables.xml) and your're good to go.
 
-
-
+</br>
+</br>
 
 ## On Debian 8.x (with installer shell script)
 
@@ -113,9 +115,10 @@ If ```Include=/usr/local/etc/zabbix_agentd.conf.d/*.conf``` or ```Include=/usr/l
 
 When done, import the [**Template Linux OS - Iptables template**](https://github.com/tkne/zbxitsc/blob/master/Iptables/Templates/Template%20Linux%20OS%20-%20Iptables.xml) and your're good to go.
 
-
-
-
+</br>
+</br>
+</br>
+</br>
 
 ## On CentOS 6.x (manual install)
 
@@ -183,8 +186,8 @@ Restart Zabbix agent service:
 
 When done, import the [**Template Linux OS - Iptables template**](https://github.com/tkne/zbxitsc/blob/master/Iptables/Templates/Template%20Linux%20OS%20-%20Iptables.xml) and your're good to go.
 
-
-
+</br>
+</br>
 
 ## On CentOS 7.x (manual install)
 
@@ -252,8 +255,8 @@ Restart Zabbix agent service:
 
 When done, import the [**Template Linux OS - Iptables template**](https://github.com/tkne/zbxitsc/blob/master/Iptables/Templates/Template%20Linux%20OS%20-%20Iptables.xml) and your're good to go.
 
-
-
+</br>
+</br>
 
 ## On Debian 8.x (manual install)
 
