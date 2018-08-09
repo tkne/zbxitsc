@@ -7,5 +7,6 @@ Extend the number of monitored cores by creating additional items and graphs.
 </br>
 </br>
 
-Up to 32 cores:
+Up to 32 CPU cores:
+
 ![CPU_Cores_Monitoring_Zabbix](https://i.imgur.com/1lVwy5v.jpg)
