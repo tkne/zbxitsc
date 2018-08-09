@@ -9,7 +9,6 @@ Before Disk IO status check setup for your Zabbix hosts
 </br>
 </br>
 </br>
-</br>
 
 ## Installation guide using installer shell script
 
