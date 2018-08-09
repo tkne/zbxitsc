@@ -4,7 +4,7 @@ Disk IO status check for Zabbix
 </br>
 
 **!!! Make sure to install GLLD on the Zabbix server first before you proceed !!!** </br>
-↪ https://github.com/tkne/zbxitsc/tree/master/GLLD
+↪ https://github.com/tkne/zbxitsc/tree/master/GLLD#graph-low-level-discovery-for-zabbix
 
 </br>
 
