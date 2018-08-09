@@ -68,7 +68,7 @@ Include=/etc/zabbix/zabbix_agentd.d/*.conf
 
 If ```Include=/etc/zabbix/zabbix_agentd.d/*.conf``` or ```Include=/etc/zabbix/zabbix_agentd.d/``` matches your output, proceed using the script below. Otherwise edit the script to match your path of choice.
 
-```# wget -O - https://raw.githubusercontent.com/tkne/zbxitsc/master/Disk%20IO/Shell%20Script%20Installers/diskio_install_centos7x.sh```
+```# wget -O - https://raw.githubusercontent.com/tkne/zbxitsc/master/Disk%20IO/Shell%20Script%20Installers/diskio_install_centos7x.sh | bash```
 
 When done, import the [**Template Disk IO**](https://github.com/tkne/zbxitsc/blob/master/Disk%20IO/Templates/Template%20Disk%20IO.xml) and your're good to go.
 
