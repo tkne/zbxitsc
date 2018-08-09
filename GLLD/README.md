@@ -21,7 +21,7 @@ Open ```menu.inc.php``` in editor:</br>
 ```# nano /usr/share/zabbix/include/menu.inc.php```
 
 Add following lines (marked with a +) at exactly the same location as shown below:
-```php
+```diff
                                 [
                                         'url' => 'maintenance.php',
                                         'label' => _('Maintenance')
@@ -160,7 +160,7 @@ Open ```menu.inc.php``` in editor:</br>
 ```# nano /usr/share/zabbix/include/menu.inc.php```
 
 Add following lines (marked with a +) at exactly the same location as shown below:
-```php
+```diff
                                 [
                                         'url' => 'maintenance.php',
                                         'label' => _('Maintenance')
