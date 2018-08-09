@@ -62,7 +62,7 @@ $auth=['user' => '', 'password' => '']; //fix this with valid user/password havi
 ...
 ```
 
-When done, proceed with the [**Disk IO status check setup for your Zabbix hosts**](https://github.com/tkne/zbxitsc/tree/master/Disk%20IO).
+When done, proceed with the [**Disk IO status check setup for your Zabbix hosts**](https://github.com/tkne/zbxitsc/tree/master/Disk%20IO#disk-io-status-check-for-zabbix).
 
 </br>
 </br>
@@ -190,7 +190,7 @@ Add following lines (marked with a +) at exactly the same location as shown belo
                 'admin' => [
 ```
 
-When done, proceed with the [**Disk IO status check setup for your Zabbix hosts**](https://github.com/tkne/zbxitsc/tree/master/Disk%20IO).
+When done, proceed with the [**Disk IO status check setup for your Zabbix hosts**](https://github.com/tkne/zbxitsc/tree/master/Disk%20IO#disk-io-status-check-for-zabbix).
 </br>
 </br>
 </br>
