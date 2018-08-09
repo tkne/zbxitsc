@@ -29,7 +29,7 @@ Installation guide using step by step instructions **without** using installer s
 
 ## On CentOS 6.x (with installer shell script)
 
-Check which user config path Zabbix config uses: 
+Check which user config path Zabbix config uses:</br>
 ```# cat /etc/zabbix/zabbix_agentd.conf | grep Include```
 
 Example output:
@@ -53,7 +53,7 @@ When done, import the [**Template Disk IO**](https://github.com/tkne/zbxitsc/blo
 
 ## On CentOS 7.x (with installer shell script)
 
-Check which user config path Zabbix config uses: 
+Check which user config path Zabbix config uses:</br>
 ```# cat /etc/zabbix/zabbix_agentd.conf | grep Include```
 
 Example output:
@@ -77,7 +77,7 @@ When done, import the [**Template Disk IO**](https://github.com/tkne/zbxitsc/blo
 
 ## On Debian 8.x (with installer shell script)
 
-Check which user config path Zabbix config uses: 
+Check which user config path Zabbix config uses:</br>
 ```$ cat /etc/zabbix/zabbix_agentd.conf | grep Include```
 
 Example output:
@@ -103,7 +103,7 @@ When done, import the [**Template Disk IO**](https://github.com/tkne/zbxitsc/blo
 
 ## On CentOS 6.x (manual install)
 
-Check which user config path Zabbix config uses:
+Check which user config path Zabbix config uses:</br>
 ```# cat /etc/zabbix/zabbix_agentd.conf | grep Include```
 
 Example output:
@@ -118,8 +118,8 @@ Include=/etc/zabbix/zabbix_agentd.d/*.conf
 
 In my case we are going to use ```Include=/etc/zabbix/zabbix_agentd.d/```.
 
-Create a new file called ```iostat.conf```:
-```# nano /etc/zabbix/zabbix_agentd.conf.d/iostat.conf```
+Create a new file called ```iostat.conf```:</br>
+```# nano /etc/zabbix/zabbix_agentd.d/iostat.conf```
 
 Insert the contents below and save:
 ```
@@ -140,7 +140,7 @@ UserParameter=custom.vfs.dev.weight.io.ms[*],awk '{print $$11}' /sys/class/block
 ### DISK I/O###
 ```
 
-Create a new file called ```lld-disks.py``` in ```/usr/local/bin/```:
+Create a new file called ```lld-disks.py``` in ```/usr/local/bin/```:</br>
 ```# nano /usr/local/bin/lld-disks.py```
 
 Insert the contents below and save:
@@ -159,10 +159,10 @@ if __name__ == "__main__":
     print(json.dumps({"data": data}, indent=4))
 ```
 
-Make the file executable:
+Make the file executable:</br>
 ```# chmod +x /usr/local/bin/lld-disks.py```
 
-Restart Zabbix agent service:
+Restart Zabbix agent service:</br>
 ```# service zabbix-agent restart```
 
 When done, import the [**Template Disk IO**](https://github.com/tkne/zbxitsc/blob/master/Disk%20IO/Templates/Template%20Disk%20IO.xml) and your're good to go.
@@ -172,7 +172,7 @@ When done, import the [**Template Disk IO**](https://github.com/tkne/zbxitsc/blo
 
 ## On CentOS 7.x (manual install)
 
-Check which user config path Zabbix config uses:
+Check which user config path Zabbix config uses:</br>
 ```# cat /etc/zabbix/zabbix_agentd.conf | grep Include```
 
 Example output:
@@ -187,8 +187,8 @@ Include=/etc/zabbix/zabbix_agentd.d/*.conf
 
 In my case we are going to use ```Include=/etc/zabbix/zabbix_agentd.d/```.
 
-Create a new file called ```iostat.conf```:
-```# nano /etc/zabbix/zabbix_agentd.conf.d/iostat.conf```
+Create a new file called ```iostat.conf```:</br>
+```# nano /etc/zabbix/zabbix_agentd.d/iostat.conf```
 
 Insert the contents below and save:
 ```
@@ -209,7 +209,7 @@ UserParameter=custom.vfs.dev.weight.io.ms[*],awk '{print $$11}' /sys/class/block
 ### DISK I/O###
 ```
 
-Create a new file called ```lld-disks.py``` in ```/usr/local/bin/```:
+Create a new file called ```lld-disks.py``` in ```/usr/local/bin/```:</br>
 ```# nano /usr/local/bin/lld-disks.py```
 
 Insert the contents below and save:
@@ -228,10 +228,10 @@ if __name__ == "__main__":
     print(json.dumps({"data": data}, indent=4))
 ```
 
-Make the file executable:
+Make the file executable:</br>
 ```# chmod +x /usr/local/bin/lld-disks.py```
 
-Restart Zabbix agent service:
+Restart Zabbix agent service:</br>
 ```# systemctl restart zabbix-agent```
 
 When done, import the [**Template Disk IO**](https://github.com/tkne/zbxitsc/blob/master/Disk%20IO/Templates/Template%20Disk%20IO.xml) and your're good to go.
@@ -241,7 +241,7 @@ When done, import the [**Template Disk IO**](https://github.com/tkne/zbxitsc/blo
 
 ## On Debian 8.x (manual install)
 
-Check which user config path Zabbix config uses:
+Check which user config path Zabbix config uses:</br>
 ```$ cat /etc/zabbix/zabbix_agentd.conf | grep Include```
 
 Example output:
@@ -256,7 +256,7 @@ Include=/usr/local/etc/zabbix_agentd.conf.d/
 
 In my case we are going to use ```Include=/usr/local/etc/zabbix_agentd.conf.d/```.
 
-Create a new file called ```iostat.conf```:
+Create a new file called ```iostat.conf```:</br>
 ```$ nano /usr/local/etc/zabbix_agentd.conf.d/iostat.conf```
 
 Insert the contents below and save:
@@ -278,7 +278,7 @@ UserParameter=custom.vfs.dev.weight.io.ms[*],awk '{print $$11}' /sys/class/block
 ### DISK I/O###
 ```
 
-Create a new file called ```lld-disks.py``` in ```/usr/local/bin/```:
+Create a new file called ```lld-disks.py``` in ```/usr/local/bin/```:</br>
 ```$ nano /usr/local/bin/lld-disks.py```
 
 Insert the contents below and save:
@@ -297,10 +297,10 @@ if __name__ == "__main__":
     print(json.dumps({"data": data}, indent=4))
 ```
 
-Make the file executable:
+Make the file executable:</br>
 ```$ chmod +x /usr/local/bin/lld-disks.py```
 
-Restart Zabbix agent service:
+Restart Zabbix agent service:</br>
 ```$ service zabbix-agent restart```
 
 When done, import the [**Template Disk IO**](https://github.com/tkne/zbxitsc/blob/master/Disk%20IO/Templates/Template%20Disk%20IO.xml) and your're good to go.
