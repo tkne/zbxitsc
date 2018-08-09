@@ -17,7 +17,6 @@ Installation guide using step by step instructions **without** using installer s
 </br>
 </br>
 </br>
-</br>
 
 ## On CentOS 6.x (with installer shell script)
 
@@ -45,6 +44,7 @@ Include=/etc/zabbix/zabbix_agentd.d/*.conf
 
 If ```Include=/etc/zabbix/zabbix_agentd.d/*.conf``` or ```Include=/etc/zabbix/zabbix_agentd.d/``` matches your output, proceed using the script below. Otherwise edit the script to match your path of choice.
 
+Run installer shell script:</br>
 ```# wget -O - https://raw.githubusercontent.com/tkne/zbxitsc/master/Iptables/Shell%20Script%20Installers/iptablescheck_install_centos6x.sh | bash```
 
 When done, import the [**Template Linux OS - Iptables template**](https://github.com/tkne/zbxitsc/blob/master/Iptables/Templates/Template%20Linux%20OS%20-%20Iptables.xml) and your're good to go.
@@ -78,6 +78,7 @@ Include=/etc/zabbix/zabbix_agentd.d/*.conf
 
 If ```Include=/etc/zabbix/zabbix_agentd.d/*.conf``` or ```Include=/etc/zabbix/zabbix_agentd.d/``` matches your output, proceed using the script below. Otherwise edit the script to match your path of choice.
 
+Run installer shell script:</br>
 ```# wget -O - https://raw.githubusercontent.com/tkne/zbxitsc/master/Iptables/Shell%20Script%20Installers/iptablescheck_install_centos7x.sh | bash```
 
 When done, import the [**Template Linux OS - Iptables template**](https://github.com/tkne/zbxitsc/blob/master/Iptables/Templates/Template%20Linux%20OS%20-%20Iptables.xml) and your're good to go.
@@ -111,6 +112,7 @@ Include=/usr/local/etc/zabbix_agentd.conf.d/
 
 If ```Include=/usr/local/etc/zabbix_agentd.conf.d/*.conf``` or ```Include=/usr/local/etc/zabbix_agentd.conf.d/``` matches your output, proceed using the script below. Otherwise edit the script to match your path of choice.
 
+Run installer shell script:</br>
 ```$ wget -O - https://raw.githubusercontent.com/tkne/zbxitsc/master/Iptables/Shell%20Script%20Installers/iptablescheck_install_debian8x.sh | bash```
 
 When done, import the [**Template Linux OS - Iptables template**](https://github.com/tkne/zbxitsc/blob/master/Iptables/Templates/Template%20Linux%20OS%20-%20Iptables.xml) and your're good to go.
@@ -150,7 +152,7 @@ Create a new file called ```iptables.conf```:</br>
 ```# nano /etc/zabbix/zabbix_agentd.d/iptables.conf```
 
 Insert the contents below and save:
-```
+```bash
 ##### IPTABLES CHECK #####
 UserParameter=iptables-status, sudo /usr/local/bin/iptablescheck.sh
 UserParameter=iptables-md5, sudo /sbin/iptables -L INPUT -n | cksum | cut -d " " -f 1
@@ -219,7 +221,7 @@ Create a new file called ```iptables.conf```:</br>
 ```# nano /etc/zabbix/zabbix_agentd.d/iptables.conf```
 
 Insert the contents below and save:
-```
+```bash
 ##### IPTABLES CHECK #####
 UserParameter=iptables-status, sudo /usr/local/bin/iptablescheck.sh
 UserParameter=iptables-md5, sudo /sbin/iptables -L INPUT -n | cksum | cut -d " " -f 1
@@ -288,7 +290,7 @@ Create a new file called ```iptables.conf```:</br>
 ```$ nano /usr/local/etc/zabbix_agentd.conf.d/iptables.conf```
 
 Insert the contents below and save:
-```
+```bash
 ##### IPTABLES CHECK #####
 UserParameter=iptables-status, sudo /usr/local/bin/iptablescheck.sh
 UserParameter=iptables-md5, sudo /sbin/iptables -L INPUT -n | cksum | cut -d " " -f 1

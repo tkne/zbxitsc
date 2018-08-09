@@ -25,7 +25,6 @@ Installation guide using step by step instructions **without** using installer s
 </br>
 </br>
 </br>
-</br>
 
 ## On CentOS 6.x (with installer shell script)
 
@@ -44,6 +43,7 @@ Include=/etc/zabbix/zabbix_agentd.d/*.conf
 
 If ```Include=/etc/zabbix/zabbix_agentd.d/*.conf``` or ```Include=/etc/zabbix/zabbix_agentd.d/``` matches your output, proceed using the script below. Otherwise edit the script to match your path of choice.
 
+Run installer shell script:</br>
 ```# wget -O - https://raw.githubusercontent.com/tkne/zbxitsc/master/Disk%20IO/Shell%20Script%20Installers/diskio_install_centos6x.sh | bash```
 
 When done, import the [**Template Disk IO**](https://github.com/tkne/zbxitsc/blob/master/Disk%20IO/Templates/Template%20Disk%20IO.xml) and your're good to go.
@@ -68,6 +68,7 @@ Include=/etc/zabbix/zabbix_agentd.d/*.conf
 
 If ```Include=/etc/zabbix/zabbix_agentd.d/*.conf``` or ```Include=/etc/zabbix/zabbix_agentd.d/``` matches your output, proceed using the script below. Otherwise edit the script to match your path of choice.
 
+Run installer shell script:</br>
 ```# wget -O - https://raw.githubusercontent.com/tkne/zbxitsc/master/Disk%20IO/Shell%20Script%20Installers/diskio_install_centos7x.sh | bash```
 
 When done, import the [**Template Disk IO**](https://github.com/tkne/zbxitsc/blob/master/Disk%20IO/Templates/Template%20Disk%20IO.xml) and your're good to go.
@@ -92,6 +93,7 @@ Include=/usr/local/etc/zabbix_agentd.conf.d/
 
 If ```Include=/usr/local/etc/zabbix_agentd.conf.d/*.conf``` or ```Include=/usr/local/etc/zabbix_agentd.conf.d/``` matches your output, proceed using the script below. Otherwise edit the script to match your path of choice.
 
+Run installer shell script:</br>
 ```$ wget -O - https://raw.githubusercontent.com/tkne/zbxitsc/master/Disk%20IO/Shell%20Script%20Installers/diskio_install_debian8x.sh | bash```
 
 When done, import the [**Template Disk IO**](https://github.com/tkne/zbxitsc/blob/master/Disk%20IO/Templates/Template%20Disk%20IO.xml) and your're good to go.
@@ -122,7 +124,7 @@ Create a new file called ```iostat.conf```:</br>
 ```# nano /etc/zabbix/zabbix_agentd.d/iostat.conf```
 
 Insert the contents below and save:
-```
+```bash
 ### DISK I/O###
 UserParameter=custom.vfs.discover_disks,/usr/local/bin/lld-disks.py
 
@@ -191,7 +193,7 @@ Create a new file called ```iostat.conf```:</br>
 ```# nano /etc/zabbix/zabbix_agentd.d/iostat.conf```
 
 Insert the contents below and save:
-```
+```bash
 ### DISK I/O###
 UserParameter=custom.vfs.discover_disks,/usr/local/bin/lld-disks.py
 
@@ -260,7 +262,7 @@ Create a new file called ```iostat.conf```:</br>
 ```$ nano /usr/local/etc/zabbix_agentd.conf.d/iostat.conf```
 
 Insert the contents below and save:
-```
+```bash
 ### DISK I/O###
 UserParameter=custom.vfs.discover_disks,/usr/local/bin/lld-disks.py
 
