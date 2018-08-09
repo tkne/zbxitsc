@@ -21,7 +21,7 @@ Installation guide using step by step instructions **without** using installer s
 
 ## On CentOS 6.x (with installer shell script)
 
-Open sudoers file in the editor:
+Open sudoers file in the editor:</br>
 ```# nano /etc/sudoers```
 
 Add the following:
@@ -30,7 +30,7 @@ zabbix  ALL=(ALL)       NOPASSWD: /sbin/iptables -L INPUT -n
 zabbix  ALL=(ALL)       NOPASSWD: /usr/local/bin/iptablescheck.sh
 ```
 
-Check which user config path Zabbix config uses: 
+Check which user config path Zabbix config uses:</br>
 ```# cat /etc/zabbix/zabbix_agentd.conf | grep Include```
 
 Example output:
@@ -54,7 +54,7 @@ When done, import the [**Template Linux OS - Iptables template**](https://github
 
 ## On CentOS 7.x (with installer shell script)
 
-Open sudoers file in the editor:
+Open sudoers file in the editor:</br>
 ```# nano /etc/sudoers```
 
 Add the following:
@@ -63,7 +63,7 @@ zabbix  ALL=(ALL)       NOPASSWD: /sbin/iptables -L INPUT -n
 zabbix  ALL=(ALL)       NOPASSWD: /usr/local/bin/iptablescheck.sh
 ```
 
-Check which user config path Zabbix config uses: 
+Check which user config path Zabbix config uses:</br>
 ```# cat /etc/zabbix/zabbix_agentd.conf | grep Include```
 
 Example output:
@@ -87,7 +87,7 @@ When done, import the [**Template Linux OS - Iptables template**](https://github
 
 ## On Debian 8.x (with installer shell script)
 
-Open sudoers file in the editor:
+Open sudoers file in the editor:</br>
 ```$ nano /etc/sudoers```
 
 Add the following:
@@ -96,7 +96,7 @@ zabbix  ALL=(ALL)       NOPASSWD: /sbin/iptables -L INPUT -n
 zabbix  ALL=(ALL)       NOPASSWD: /usr/local/bin/iptablescheck.sh
 ```
 
-Check which user config path Zabbix config uses: 
+Check which user config path Zabbix config uses:</br>
 ```$ cat /etc/zabbix/zabbix_agentd.conf | grep Include```
 
 Example output:
@@ -122,7 +122,7 @@ When done, import the [**Template Linux OS - Iptables template**](https://github
 
 ## On CentOS 6.x (manual install)
 
-Open sudoers file in the editor:
+Open sudoers file in the editor:</br>
 ```# nano /etc/sudoers```
 
 Add the following:
@@ -131,7 +131,7 @@ zabbix  ALL=(ALL)       NOPASSWD: /sbin/iptables -L INPUT -n
 zabbix  ALL=(ALL)       NOPASSWD: /usr/local/bin/iptablescheck.sh
 ```
 
-Check which user config path Zabbix config uses:
+Check which user config path Zabbix config uses:</br>
 ```# cat /etc/zabbix/zabbix_agentd.conf | grep Include```
 
 Example output:
@@ -146,8 +146,8 @@ Include=/etc/zabbix/zabbix_agentd.d/*.conf
 
 In my case we are going to use ```Include=/etc/zabbix/zabbix_agentd.d/```.
 
-Create a new file called ```iptables.conf```:
-```# nano /etc/zabbix/zabbix_agentd.conf.d/iptables.conf```
+Create a new file called ```iptables.conf```:</br>
+```# nano /etc/zabbix/zabbix_agentd.d/iptables.conf```
 
 Insert the contents below and save:
 ```
@@ -157,7 +157,7 @@ UserParameter=iptables-md5, sudo /sbin/iptables -L INPUT -n | cksum | cut -d " "
 ##### IPTABLES CHECK #####
 ```
 
-Create a new file called ```iptablescheck.sh``` in ```/usr/local/bin/```:
+Create a new file called ```iptablescheck.sh``` in ```/usr/local/bin/```:</br>
 ```# nano /usr/local/bin/iptablescheck.sh```
 
 Insert the contents below and save:
@@ -178,10 +178,10 @@ echo "$ST"
 exit $EX
 ```
 
-Make the file executable:
+Make the file executable:</br>
 ```# chmod +x /usr/local/bin/iptablescheck.sh```
 
-Restart Zabbix agent service:
+Restart Zabbix agent service:</br>
 ```# service zabbix-agent restart```
 
 When done, import the [**Template Linux OS - Iptables template**](https://github.com/tkne/zbxitsc/blob/master/Iptables/Templates/Template%20Linux%20OS%20-%20Iptables.xml) and your're good to go.
@@ -191,7 +191,7 @@ When done, import the [**Template Linux OS - Iptables template**](https://github
 
 ## On CentOS 7.x (manual install)
 
-Open sudoers file in the editor:
+Open sudoers file in the editor:</br>
 ```# nano /etc/sudoers```
 
 Add the following:
@@ -200,7 +200,7 @@ zabbix  ALL=(ALL)       NOPASSWD: /sbin/iptables -L INPUT -n
 zabbix  ALL=(ALL)       NOPASSWD: /usr/local/bin/iptablescheck.sh
 ```
 
-Check which user config path Zabbix config uses:
+Check which user config path Zabbix config uses:</br>
 ```# cat /etc/zabbix/zabbix_agentd.conf | grep Include```
 
 Example output:
@@ -215,8 +215,8 @@ Include=/etc/zabbix/zabbix_agentd.d/*.conf
 
 In my case we are going to use ```Include=/etc/zabbix/zabbix_agentd.d/```.
 
-Create a new file called ```iptables.conf```:
-```# nano /etc/zabbix/zabbix_agentd.conf.d/iptables.conf```
+Create a new file called ```iptables.conf```:</br>
+```# nano /etc/zabbix/zabbix_agentd.d/iptables.conf```
 
 Insert the contents below and save:
 ```
@@ -226,7 +226,7 @@ UserParameter=iptables-md5, sudo /sbin/iptables -L INPUT -n | cksum | cut -d " "
 ##### IPTABLES CHECK #####
 ```
 
-Create a new file called ```iptablescheck.sh``` in ```/usr/local/bin/```:
+Create a new file called ```iptablescheck.sh``` in ```/usr/local/bin/```:</br>
 ```# nano /usr/local/bin/iptablescheck.sh```
 
 Insert the contents below and save:
@@ -247,10 +247,10 @@ echo "$ST"
 exit $EX
 ```
 
-Make the file executable:
+Make the file executable:</br>
 ```# chmod +x /usr/local/bin/iptablescheck.sh```
 
-Restart Zabbix agent service:
+Restart Zabbix agent service:</br>
 ```# systemctl restart zabbix-agent```
 
 When done, import the [**Template Linux OS - Iptables template**](https://github.com/tkne/zbxitsc/blob/master/Iptables/Templates/Template%20Linux%20OS%20-%20Iptables.xml) and your're good to go.
@@ -260,7 +260,7 @@ When done, import the [**Template Linux OS - Iptables template**](https://github
 
 ## On Debian 8.x (manual install)
 
-Open sudoers file in the editor:
+Open sudoers file in the editor:</br>
 ```$ nano /etc/sudoers```
 
 Add the following:
@@ -269,7 +269,7 @@ zabbix  ALL=(ALL)       NOPASSWD: /sbin/iptables -L INPUT -n
 zabbix  ALL=(ALL)       NOPASSWD: /usr/local/bin/iptablescheck.sh
 ```
 
-Check which user config path Zabbix config uses:
+Check which user config path Zabbix config uses:</br>
 ```$ cat /etc/zabbix/zabbix_agentd.conf | grep Include```
 
 Example output:
@@ -284,7 +284,7 @@ Include=/usr/local/etc/zabbix_agentd.conf.d/
 
 In my case we are going to use ```Include=/usr/local/etc/zabbix_agentd.conf.d/```.
 
-Create a new file called ```iptables.conf```:
+Create a new file called ```iptables.conf```:</br>
 ```$ nano /usr/local/etc/zabbix_agentd.conf.d/iptables.conf```
 
 Insert the contents below and save:
@@ -295,7 +295,7 @@ UserParameter=iptables-md5, sudo /sbin/iptables -L INPUT -n | cksum | cut -d " "
 ##### IPTABLES CHECK #####
 ```
 
-Create a new file called ```iptablescheck.sh``` in ```/usr/local/bin/```:
+Create a new file called ```iptablescheck.sh``` in ```/usr/local/bin/```:</br>
 ```$ nano /usr/local/bin/iptablescheck.sh```
 
 Insert the contents below and save:
@@ -316,10 +316,10 @@ echo "$ST"
 exit $EX
 ```
 
-Make the file executable:
+Make the file executable:</br>
 ```$ chmod +x /usr/local/bin/iptablescheck.sh```
 
-Restart Zabbix agent service:
+Restart Zabbix agent service:</br>
 ```$ service zabbix-agent restart```
 
 When done, import the [**Template Linux OS - Iptables template**](https://github.com/tkne/zbxitsc/blob/master/Iptables/Templates/Template%20Linux%20OS%20-%20Iptables.xml) and your're good to go.
