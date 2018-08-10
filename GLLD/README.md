@@ -221,8 +221,8 @@ Next, click on **Create graph** in the upper right corner:
 
 We are going to create two graph templates now:
 
-- "Disk iops Read/Write Bytes/s", which contains the items for "Read Bytes/s" and "Write Bytes/s"
-- "Disk iops Read/Write IOPS", which contains the items for "Read IOPS/s" and "Write IOPS/s"
+- **Disk iops Read/Write Bytes/s**, which contains the items for **Read Bytes/s** and **Write Bytes/s**
+- **Disk iops Read/Write IOPS**, which contains the items for **Read IOPS/s** and **Write IOPS/s**
 
 Use the screenshots below as a guide for your setup:
 
