@@ -5,8 +5,8 @@ Graph Low Level Discovery for Zabbix
 
    * [Installation guide using installer shell script](#installation-guide-using-installer-shell-script)
    * [Installation guide **without** using installer shell script](#installation-guide-without-using-installer-shell-script)
-
 </br>
+
 **After** Disk IO status check setup for your Zabbix hosts
 
    * [Graph template setup and creation via Zabbix GUI](#graph-template-setup-and-creation-via-zabbix-gui)
@@ -204,7 +204,10 @@ Add following lines (marked with a +) at exactly the same location as shown belo
 
 ## Graph template setup and creation via Zabbix GUI
 
-Within the Zabbix GUI, click on **Settings** > **GLLD**:
+Please make sure you're done with the [**Disk IO status check setup for your Zabbix hosts**](https://github.com/tkne/zbxitsc/tree/master/Disk%20IO#disk-io-status-check-for-zabbix) before you proceed.
+</br>
+
+Within the Zabbix GUI, click on **Configuration** > **GLLD**:
 
 ![zbx_menu](https://i.imgur.com/tr2LmNv.png)
 
@@ -218,8 +221,10 @@ Next, click on **Create graph** in the upper right corner:
 
 We are going to create two graph templates now:
 
-    - "Disk iops Read/Write Bytes/s", which contains the items for "Read Bytes/s" and "Write Bytes/s"
-    - "Disk iops Read/Write IOPS", which contains the items for "Read IOPS/s" and "Write IOPS/s"
+- "Disk iops Read/Write Bytes/s", which contains the items for "Read Bytes/s" and "Write Bytes/s"
+- "Disk iops Read/Write IOPS", which contains the items for "Read IOPS/s" and "Write IOPS/s"
+
+Use the screenshots below as a guide for your setup:
 
 ![graph_bps](https://imgur.com/WPGESDx.png)
 
@@ -227,7 +232,7 @@ We are going to create two graph templates now:
 
 </br>
 
-Now that we have created the templates above, let's create some graphs by checking both template boxes and clicking on **Run**:
+Now that we have created the templates above, let's create some graphs by checking both template boxes and clicking on **Run** afterwards:
 
 ![glld_run](https://imgur.com/0Vtcpbu.png)
 
@@ -239,9 +244,9 @@ Agree by clicking on **OK**:
 
 </br>
 
-In my case, graphs for each host already exist and haven't changed, so GLLD is skipping those host. In your case new graphs will be created. If nothing happens, make sure that you've attached the [Template Disk IO](https://github.com/tkne/zbxitsc/blob/master/Disk%20IO/Templates/Template%20Disk%20IO.xml) to hour host/s. 
+In my case, graphs for each host already exist and haven't changed, so GLLD is skipping those host. In your case new graphs will be created. If nothing happens, make sure that you've attached the [Template Disk IO](https://github.com/tkne/zbxitsc/blob/master/Disk%20IO/Templates/Template%20Disk%20IO.xml) to your host/s. 
 
-![glld_approve](https://imgur.com/qfM7ikk.png)
+![glld_approve](https://imgur.com/5vH5HlU.png)
 
 </br>
 
