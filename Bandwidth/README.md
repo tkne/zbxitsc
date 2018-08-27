@@ -172,7 +172,7 @@ Next, import the [**Template Bandwidth**](https://github.com/tkne/zbxitsc/blob/m
 
 When done, you will have screen graphs like this:</br>
 
-![CPU_Cores_Monitoring_Zabbix](zbx_srv_traffic.jpg)
+![zbx_srv_traffic](https://imgur.com/HR8rIkN.jpg)
 
 And a graph sent to you every month by mail that looks like this:</br>
 
@@ -344,7 +344,7 @@ Next, import the [**Template Bandwidth**](https://github.com/tkne/zbxitsc/blob/m
 
 When done, you will have screen graphs like this:</br>
 
-![CPU_Cores_Monitoring_Zabbix](zbx_srv_traffic.jpg)
+![zbx_srv_traffic](https://imgur.com/HR8rIkN.jpg)
 
 And a graph sent to you every month by mail that looks like this:</br>
 
@@ -516,7 +516,7 @@ Next, import the [**Template Bandwidth**](https://github.com/tkne/zbxitsc/blob/m
 
 When done, you will have screen graphs like this:</br>
 
-![CPU_Cores_Monitoring_Zabbix](zbx_srv_traffic.jpg)
+![zbx_srv_traffic](https://imgur.com/HR8rIkN.jpg)
 
 And a graph sent to you every month by mail that looks like this:</br>
 
