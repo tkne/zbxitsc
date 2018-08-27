@@ -524,4 +524,4 @@ And a graph sent to you every month by mail that looks like this:</br>
 </br>
 </br>
 </br>
-Credits: https://github.com/thecamels
+Credits: https://github.com/vishneak
