@@ -18,7 +18,7 @@ Graph Low Level Discovery for Zabbix
 ## Installation guide using installer shell script
 
 Run installer shell script:</br>
-```# wget -O - https://raw.githubusercontent.com/tkne/zbxitsc/master/GLLD/Shell%20Script%20Installers/glld_install.sh | bash```
+```# wget -O - https://raw.githubusercontent.com/tkne/zbxitsc/master/GLLD/Shell%20Script%20Installer/glld_install.sh | bash```
 
 
 Open ```menu.inc.php``` in editor:</br>
@@ -244,7 +244,7 @@ Agree by clicking on **OK**:
 
 </br>
 
-In my case, graphs for each host already exist and haven't changed, so GLLD is skipping those host. In your case new graphs will be created. If nothing happens, make sure that you've attached the [Template Disk IO](https://github.com/tkne/zbxitsc/blob/master/Disk%20IO/Templates/Template%20Disk%20IO.xml) to your host/s. 
+In my case, graphs for each host already exist and haven't changed, so GLLD is skipping those host. In your case new graphs will be created. If nothing happens, make sure that you've attached the [Template Disk IO](https://github.com/tkne/zbxitsc/blob/master/Disk%20IO/Template/Template%20Disk%20IO.xml) to your host/s. 
 
 ![glld_approve](https://imgur.com/5vH5HlU.png)
 

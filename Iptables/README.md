@@ -47,7 +47,7 @@ If ```Include=/etc/zabbix/zabbix_agentd.d/*.conf``` or ```Include=/etc/zabbix/za
 Run installer shell script:</br>
 ```# wget -O - https://raw.githubusercontent.com/tkne/zbxitsc/master/Iptables/Shell%20Script%20Installers/iptablescheck_install_centos6x.sh | bash```
 
-When done, import the [**Template Linux OS - Iptables template**](https://github.com/tkne/zbxitsc/blob/master/Iptables/Templates/Template%20Linux%20OS%20-%20Iptables.xml) and your're good to go.
+When done, import the [**Template Linux OS - Iptables template**](https://github.com/tkne/zbxitsc/blob/master/Iptables/Template/Template%20Linux%20OS%20-%20Iptables.xml) and your're good to go.
 
 </br>
 </br>
@@ -81,7 +81,7 @@ If ```Include=/etc/zabbix/zabbix_agentd.d/*.conf``` or ```Include=/etc/zabbix/za
 Run installer shell script:</br>
 ```# wget -O - https://raw.githubusercontent.com/tkne/zbxitsc/master/Iptables/Shell%20Script%20Installers/iptablescheck_install_centos7x.sh | bash```
 
-When done, import the [**Template Linux OS - Iptables template**](https://github.com/tkne/zbxitsc/blob/master/Iptables/Templates/Template%20Linux%20OS%20-%20Iptables.xml) and your're good to go.
+When done, import the [**Template Linux OS - Iptables template**](https://github.com/tkne/zbxitsc/blob/master/Iptables/Template/Template%20Linux%20OS%20-%20Iptables.xml) and your're good to go.
 
 </br>
 </br>
@@ -115,7 +115,7 @@ If ```Include=/usr/local/etc/zabbix_agentd.conf.d/*.conf``` or ```Include=/usr/l
 Run installer shell script:</br>
 ```$ wget -O - https://raw.githubusercontent.com/tkne/zbxitsc/master/Iptables/Shell%20Script%20Installers/iptablescheck_install_debian8x.sh | bash```
 
-When done, import the [**Template Linux OS - Iptables template**](https://github.com/tkne/zbxitsc/blob/master/Iptables/Templates/Template%20Linux%20OS%20-%20Iptables.xml) and your're good to go.
+When done, import the [**Template Linux OS - Iptables template**](https://github.com/tkne/zbxitsc/blob/master/Iptables/Template/Template%20Linux%20OS%20-%20Iptables.xml) and your're good to go.
 
 </br>
 </br>
@@ -186,7 +186,7 @@ Make the file executable:</br>
 Restart Zabbix agent service:</br>
 ```# service zabbix-agent restart```
 
-When done, import the [**Template Linux OS - Iptables template**](https://github.com/tkne/zbxitsc/blob/master/Iptables/Templates/Template%20Linux%20OS%20-%20Iptables.xml) and your're good to go.
+When done, import the [**Template Linux OS - Iptables template**](https://github.com/tkne/zbxitsc/blob/master/Iptables/Template/Template%20Linux%20OS%20-%20Iptables.xml) and your're good to go.
 
 </br>
 </br>
@@ -255,7 +255,7 @@ Make the file executable:</br>
 Restart Zabbix agent service:</br>
 ```# systemctl restart zabbix-agent```
 
-When done, import the [**Template Linux OS - Iptables template**](https://github.com/tkne/zbxitsc/blob/master/Iptables/Templates/Template%20Linux%20OS%20-%20Iptables.xml) and your're good to go.
+When done, import the [**Template Linux OS - Iptables template**](https://github.com/tkne/zbxitsc/blob/master/Iptables/Template/Template%20Linux%20OS%20-%20Iptables.xml) and your're good to go.
 
 </br>
 </br>
@@ -324,7 +324,7 @@ Make the file executable:</br>
 Restart Zabbix agent service:</br>
 ```$ service zabbix-agent restart```
 
-When done, import the [**Template Linux OS - Iptables template**](https://github.com/tkne/zbxitsc/blob/master/Iptables/Templates/Template%20Linux%20OS%20-%20Iptables.xml) and your're good to go.
+When done, import the [**Template Linux OS - Iptables template**](https://github.com/tkne/zbxitsc/blob/master/Iptables/Template/Template%20Linux%20OS%20-%20Iptables.xml) and your're good to go.
 </br>
 </br>
 </br>

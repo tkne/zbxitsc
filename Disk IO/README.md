@@ -45,7 +45,7 @@ If ```Include=/etc/zabbix/zabbix_agentd.d/*.conf``` or ```Include=/etc/zabbix/za
 Run installer shell script:</br>
 ```# wget -O - https://raw.githubusercontent.com/tkne/zbxitsc/master/Disk%20IO/Shell%20Script%20Installers/diskio_install_centos6x.sh | bash```
 
-When done, import the [**Template Disk IO**](https://github.com/tkne/zbxitsc/blob/master/Disk%20IO/Templates/Template%20Disk%20IO.xml).
+When done, import the [**Template Disk IO**](https://github.com/tkne/zbxitsc/blob/master/Disk%20IO/Template/Template%20Disk%20IO.xml).
 Remember, the discovery update interval for this template is set to a default of one hour (1h). You can set it to something lower (ie 1m) while you are setting up to speed things up.
 
 **Next**: proceed with the [**Graph template setup and creation via Zabbix GUI**](https://github.com/tkne/zbxitsc/tree/master/GLLD#graph-template-setup-and-creation-via-zabbix-gui).
@@ -73,7 +73,7 @@ If ```Include=/etc/zabbix/zabbix_agentd.d/*.conf``` or ```Include=/etc/zabbix/za
 Run installer shell script:</br>
 ```# wget -O - https://raw.githubusercontent.com/tkne/zbxitsc/master/Disk%20IO/Shell%20Script%20Installers/diskio_install_centos7x.sh | bash```
 
-When done, import the [**Template Disk IO**](https://github.com/tkne/zbxitsc/blob/master/Disk%20IO/Templates/Template%20Disk%20IO.xml).
+When done, import the [**Template Disk IO**](https://github.com/tkne/zbxitsc/blob/master/Disk%20IO/Template/Template%20Disk%20IO.xml).
 Remember, the discovery update interval for this template is set to a default of one hour (1h). You can set it to something lower (ie 1m) while you are setting up to speed things up.
 
 **Next**: proceed with the [**Graph template setup and creation via Zabbix GUI**](https://github.com/tkne/zbxitsc/tree/master/GLLD#graph-template-setup-and-creation-via-zabbix-gui).
@@ -101,7 +101,7 @@ If ```Include=/usr/local/etc/zabbix_agentd.conf.d/*.conf``` or ```Include=/usr/l
 Run installer shell script:</br>
 ```$ wget -O - https://raw.githubusercontent.com/tkne/zbxitsc/master/Disk%20IO/Shell%20Script%20Installers/diskio_install_debian8x.sh | bash```
 
-When done, import the [**Template Disk IO**](https://github.com/tkne/zbxitsc/blob/master/Disk%20IO/Templates/Template%20Disk%20IO.xml).
+When done, import the [**Template Disk IO**](https://github.com/tkne/zbxitsc/blob/master/Disk%20IO/Template/Template%20Disk%20IO.xml).
 Remember, the discovery update interval for this template is set to a default of one hour (1h). You can set it to something lower (ie 1m) while you are setting up to speed things up.
 
 **Next**: proceed with the [**Graph template setup and creation via Zabbix GUI**](https://github.com/tkne/zbxitsc/tree/master/GLLD#graph-template-setup-and-creation-via-zabbix-gui).
@@ -175,7 +175,7 @@ Make the file executable:</br>
 Restart Zabbix agent service:</br>
 ```# service zabbix-agent restart```
 
-When done, import the [**Template Disk IO**](https://github.com/tkne/zbxitsc/blob/master/Disk%20IO/Templates/Template%20Disk%20IO.xml).
+When done, import the [**Template Disk IO**](https://github.com/tkne/zbxitsc/blob/master/Disk%20IO/Template/Template%20Disk%20IO.xml).
 Remember, the discovery update interval for this template is set to a default of one hour (1h). You can set it to something lower (ie 1m) while you are setting up to speed things up.
 
 **Next**: proceed with the [**Graph template setup and creation via Zabbix GUI**](https://github.com/tkne/zbxitsc/tree/master/GLLD#graph-template-setup-and-creation-via-zabbix-gui).
@@ -247,7 +247,7 @@ Make the file executable:</br>
 Restart Zabbix agent service:</br>
 ```# systemctl restart zabbix-agent```
 
-When done, import the [**Template Disk IO**](https://github.com/tkne/zbxitsc/blob/master/Disk%20IO/Templates/Template%20Disk%20IO.xml).
+When done, import the [**Template Disk IO**](https://github.com/tkne/zbxitsc/blob/master/Disk%20IO/Template/Template%20Disk%20IO.xml).
 Remember, the discovery update interval for this template is set to a default of one hour (1h). You can set it to something lower (ie 1m) while you are setting up to speed things up.
 
 **Next**: proceed with the [**Graph template setup and creation via Zabbix GUI**](https://github.com/tkne/zbxitsc/tree/master/GLLD#graph-template-setup-and-creation-via-zabbix-gui).
@@ -319,7 +319,7 @@ Make the file executable:</br>
 Restart Zabbix agent service:</br>
 ```$ service zabbix-agent restart```
 
-When done, import the [**Template Disk IO**](https://github.com/tkne/zbxitsc/blob/master/Disk%20IO/Templates/Template%20Disk%20IO.xml).
+When done, import the [**Template Disk IO**](https://github.com/tkne/zbxitsc/blob/master/Disk%20IO/Template/Template%20Disk%20IO.xml).
 Remember, the discovery update interval for this template is set to a default of one hour (1h). You can set it to something lower (ie 1m) while you are setting up to speed things up.
 
 **Next**: proceed with the [**Graph template setup and creation via Zabbix GUI**](https://github.com/tkne/zbxitsc/tree/master/GLLD#graph-template-setup-and-creation-via-zabbix-gui).
