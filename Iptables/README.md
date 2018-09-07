@@ -14,6 +14,9 @@ Installation guide using step by step instructions **without** using installer s
    * [On CentOS 7.x](#on-centos-7x-manual-install)
    * [On Debian 8.x](#on-debian-8x-manual-install)
 
+
+[Troubleshooting](#troubleshooting)
+
 </br>
 </br>
 </br>
@@ -325,6 +328,35 @@ Restart Zabbix agent service:</br>
 ```$ service zabbix-agent restart```
 
 When done, import the [**Template Linux OS - Iptables template**](https://github.com/tkne/zbxitsc/blob/master/Iptables/Template/Template%20Linux%20OS%20-%20Iptables.xml) and your're good to go.
+
+</br>
+</br>
+</br>
+</br>
+
+## Troubleshooting
+
+Within the Zabbix admin dashboard GUI, click on **Settings** > **Hosts** > **Items** (of the desired) host and check the following two items and their status. You might run into the following two error messages: </br>
+
+**Template OS Linux - Iptables: iptables is running**
+```Value "sudo: sorry, you must have a tty to run sudo" of type "string" is not suitable for value type "Numeric (unsigned)"```
+
+**Template OS Linux - Iptables: iptables policy checksum**
+```Value "sudo: sorry, you must have a tty to run sudo 1234567890" of type "string" is not suitable for value type "Numeric (unsigned)"```
+
+If that happens to be the case, connect to your host and open the sudoers file in an editor:
+```nano /etc/sudoers```
+
+We are looking for an entry which looks as follows:
+```Defaults  requiretty```
+
+You can either comment it out and save the file like this:
+```# Defaults  requiretty```
+
+Or you can leave it as it is and add the following line below ```Defaults  requiretty``` and save the file afterwards:
+```Defaults:zabbix !requiretty```
+
+When you are done, restart the zabbix-agent service and wait a moment until your item status indicator turns green. If you want to speed things up, change the update timer within the items.
 </br>
 </br>
 </br>
