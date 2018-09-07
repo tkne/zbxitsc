@@ -340,25 +340,25 @@ When done, import the [**Template Linux OS - Iptables template**](https://github
 
 Within the Zabbix admin dashboard GUI, click on **Settings** > **Hosts** > **Items** (of the desired) host and check the following two items and their status. You might run into the following two error messages: </br>
 
-**Template OS Linux - Iptables: iptables is running**
+**Template OS Linux - Iptables: iptables is running**</br>
 ```Value "sudo: sorry, you must have a tty to run sudo" of type "string" is not suitable for value type "Numeric (unsigned)"```
 
-**Template OS Linux - Iptables: iptables policy checksum**
+**Template OS Linux - Iptables: iptables policy checksum**</br>
 ```Value "sudo: sorry, you must have a tty to run sudo 1234567890" of type "string" is not suitable for value type "Numeric (unsigned)"```
 
-If that happens to be the case, connect to your host and open the sudoers file in an editor:
+If that happens to be the case, connect to your host and open the sudoers file in an editor:</br>
 ```# nano /etc/sudoers```
 
-We are looking for an entry which looks as follows:
+We are looking for an entry which looks as follows:</br>
 ```Defaults  requiretty```
 
-You can either comment it out and save the file like this:
+You can either comment it out and save the file like this:</br>
 ```# Defaults  requiretty```
 
-Or you can leave it as it is and add the following line below ```Defaults  requiretty``` and save the file afterwards:
+Or you can leave it as it is and add the following line below ```Defaults  requiretty``` and save the file afterwards:</br>
 ```Defaults:zabbix !requiretty```
 
-When you are done, restart the zabbix-agent service:
+When you are done, restart the zabbix-agent service:</br>
 ```# service zabbix-agent restart``` or ```# systemctl restart zabbix-agent```
 
 When done, wait a moment until your item status indicator turns green. If you want to speed things up, change the update timer within the items.
