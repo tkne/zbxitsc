@@ -1,5 +1,7 @@
 Graph Low Level Discovery for Zabbix
 ======
+**This plugin is broken under Zabbix 4.X.**
+</br>
 
 **Before** Disk IO status check setup for your Zabbix hosts
 
