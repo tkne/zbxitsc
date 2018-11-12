@@ -7,3 +7,4 @@ Dump of various plugins, scripts, configs and templates with added installation 
 - [Disk IO status check for Zabbix (Linux)](https://github.com/tkne/zbxitsc/tree/master/Disk%20IO)
 - [Graph Low Level Discovery for Zabbix (Linux)](https://github.com/tkne/zbxitsc/tree/master/GLLD)
 - [Iptables status check for Zabbix (Linux)](https://github.com/tkne/zbxitsc/tree/master/Iptables)
+- [SQL database backup for Zabbix (Linux)](https://github.com/tkne/zbxitsc/tree/master/SQL%20Backup)
