@@ -15,7 +15,7 @@ Installation guide
 **On Zabbix server:**
 
 Download Percona XtraBackup:</br>
-(Check https://www.percona.com/downloads/XtraBackup/LATEST/ for latest build)
+(Check https://www.percona.com/downloads/XtraBackup/LATEST/ for latest build)</br>
 ```# wget https://www.percona.com/downloads/XtraBackup/Percona-XtraBackup-2.4.12/binary/redhat/6/x86_64/percona-xtrabackup-24-2.4.12-1.el6.x86_64.rpm```
 
 Install Percona XtraBackup:</br>
@@ -274,7 +274,7 @@ Start the MySQL service:</br>
 **On Zabbix server:**
 
 Download Percona XtraBackup:</br>
-(Check https://www.percona.com/downloads/XtraBackup/LATEST/ for latest build)
+(Check https://www.percona.com/downloads/XtraBackup/LATEST/ for latest build)</br>
 ```# wget https://www.percona.com/downloads/XtraBackup/Percona-XtraBackup-2.4.12/binary/redhat/7/x86_64/percona-xtrabackup-24-2.4.12-1.el7.x86_64.rpm```
 
 Install Percona XtraBackup:</br>
