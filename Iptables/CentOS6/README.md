@@ -97,11 +97,13 @@ When done, import the [**Template Linux OS - Iptables template**](https://github
 
 Within the Zabbix server admin dashboard GUI, click on **Settings** > **Hosts** > **Items** (of the desired) host and check the following two items and their status. You might run into the following two error messages:
 
-**Template OS Linux - Iptables: iptables is running**</br>
-`Value "sudo: sorry, you must have a tty to run sudo" of type "string" is not suitable for value type "Numeric (unsigned)"`
+For the **iptables is running** item:</br>
+> [!IMPORTANT]
+> sudo: sorry, you must have a tty to run sudo" of type "string" is not suitable for value type "Numeric (unsigned)
 
-**Template OS Linux - Iptables: iptables policy checksum**</br>
-`Value "sudo: sorry, you must have a tty to run sudo 1234567890" of type "string" is not suitable for value type "Numeric (unsigned)"`
+For the **iptables policy checksum** item:</br>
+> [!IMPORTANT]
+> sudo: sorry, you must have a tty to run sudo 1234567890" of type "string" is not suitable for value type "Numeric (unsigned)
 
 If that happens to be the case, connect to your host and modify the sudoers file with visudo:</br>
 ```bash
