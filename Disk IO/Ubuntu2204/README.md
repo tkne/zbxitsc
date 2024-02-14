@@ -9,7 +9,6 @@ This guide assumes that the Zabbix agent user config path is set to `/etc/zabbix
 </br>
 
 Install via shell script:
-
 ```bash
 wget -O - https://raw.githubusercontent.com/tkne/zbxitsc/master/Disk%20IO/Ubuntu2204/Shell%20Script/diskio_install.sh | bash
 ```
