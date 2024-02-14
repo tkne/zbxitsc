@@ -120,7 +120,9 @@ Or you can leave it as it is and add the following line below `Defaults  require
 `Defaults:zabbix !requiretty`
 
 Once you are done, restart the Zabbix agent service:</br>
-`service zabbix-agent restart`
+```bash
+service zabbix-agent restart
+```
 
 When done, wait a moment until your item status indicator turns green. If you want to speed things up, change the update timer within the each item.
 
