@@ -22,7 +22,7 @@ zabbix  ALL=(ALL:ALL) NOPASSWD: /usr/local/bin/iptablescheck.sh
 
 Install via shell script:
 ```bash
-wget -O - https://raw.githubusercontent.com/tkne/zbxitsc/master/Disk%20IO/Ubuntu1604/Shell%20Script/iptablescheck_install.sh | bash
+wget -O - https://raw.githubusercontent.com/tkne/zbxitsc/master/Iptables/Ubuntu1604/Shell%20Script/iptablescheck_install.sh | bash
 ```
 
 </br>
