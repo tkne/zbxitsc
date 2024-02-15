@@ -9,9 +9,10 @@ This guide assumes that the Zabbix agent user config path is set to `/etc/zabbix
 </br>
 
 Install via shell script:
-```bash
-wget -O - https://raw.githubusercontent.com/tkne/zbxitsc/master/Disk%20IO/Debian6/Shell%20Script/diskio_install.sh | bash
-```
+> [!IMPORTANT]
+> Please update manually using step by step instructions.
+> 
+> Reason is, OpenSSL 0.9.8 supports only TLS 1.0 and lower protocol versions (i.e. SSL 3.0), so there is no way to connect with a TLS 1.0 client to github.com, which itself does not longer support the TLS 1.0 protocol.
 
 </br>
 

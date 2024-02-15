@@ -5,7 +5,7 @@ This guide assumes that the Zabbix agent user config path is set to `/etc/zabbix
 
 </br>
 
-Wether you use the shell script install or the step by step installation guide, first we need to modify the Sudoers file located at `/etc/sudoers` via the `visudo` command:
+First we need to modify the Sudoers file located at `/etc/sudoers` via the `visudo` command:
 ```bash
 visudo
 ```
@@ -21,9 +21,10 @@ zabbix  ALL=(ALL) NOPASSWD: /usr/local/bin/iptablescheck.sh
 </br>
 
 Install via shell script:
-```bash
-wget -O - https://raw.githubusercontent.com/tkne/zbxitsc/master/Iptables/Debian6/Shell%20Script/iptablescheck_install.sh | bash
-```
+> [!IMPORTANT]
+> Please update manually using step by step instructions.
+> 
+> Reason is, OpenSSL 0.9.8 supports only TLS 1.0 and lower protocol versions (i.e. SSL 3.0), so there is no way to connect with a TLS 1.0 client to github.com, which itself does not longer support the TLS 1.0 protocol.
 
 </br>
 
