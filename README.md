@@ -1,5 +1,4 @@
-Zabbix
-======
+# Zabbix
 Dump of various plugins, scripts, configs and templates with added installation steps for Zabbix v3.4.x - v4.4.x
 
 - [Total Monthly Bandwidth check for Zabbix (Linux)](https://github.com/tkne/zbxitsc/tree/master/Bandwidth)
@@ -9,3 +8,4 @@ Dump of various plugins, scripts, configs and templates with added installation 
 - [Iostat check for Zabbix (Linux)](https://github.com/tkne/zbxitsc/tree/master/Iostat)
 - [Iptables status check for Zabbix (Linux)](https://github.com/tkne/zbxitsc/tree/master/Iptables)
 - [SQL database backup for Zabbix (Linux)](https://github.com/tkne/zbxitsc/tree/master/SQL%20Backup)
+- [Zabbix Agent Install (Linux)](https://github.com/tkne/zbxitsc/tree/master/Zabbix%20Agent%20Install)
