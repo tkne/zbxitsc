@@ -1,10 +1,10 @@
-iptables status check for Zabbix agent on Rocky Linux 9 (Blue Onyx)
-======
+# iptables status check for Zabbix agent on Rocky Linux 9 (Blue Onyx)
 
-This guide assumes that the Zabbix agent user config path is set to `/etc/zabbix/zabbix_agentd.d/` or `/etc/zabbix/zabbix_agentd.d/*.conf`, and that the iptables service is utilized as the system's firewall. If you encounter any issues, please refer to the [troubleshooting](#troubleshooting) section at the bottom of this installation guide.
+> This guide assumes that the Zabbix agent user config path is set to `/etc/zabbix/zabbix_agentd.d/` or `/etc/zabbix/zabbix_agentd.d/*.conf`, and that the iptables service is utilized as the system's firewall. If you encounter any issues, please refer to the [troubleshooting](#troubleshooting) section at the bottom of this installation guide.
 
 </br>
 
+## Prerequisites
 Wether you use the shell script install or the step by step installation guide, first we need to modify the Sudoers file located at `/etc/sudoers` via the `visudo` command:
 ```bash
 visudo
@@ -20,15 +20,14 @@ zabbix  ALL=(ALL)       NOPASSWD: /usr/local/bin/iptablescheck.sh
 
 </br>
 
-Install via shell script:
+## Installation via shell script
 ```bash
 wget -O - https://raw.githubusercontent.com/tkne/zbxitsc/master/Iptables/Rocky9/Shell%20Script/iptablescheck_install.sh | bash
 ```
 
 </br>
 
-Installation guide using step by step instructions:
-
+## Installation guide using step by step instructions
 Create a new file called `iptables.conf` within the `/etc/zabbix/zabbix_agentd.d/` directory:
 ```bash
 nano /etc/zabbix/zabbix_agentd.d/iptables.conf
@@ -89,6 +88,7 @@ systemctl restart zabbix-agent
 
 </br>
 
+### Next
 When done, import the [**Template Linux OS - Iptables template**](https://github.com/tkne/zbxitsc/blob/master/Iptables/Template/Template%20Linux%20OS%20-%20Iptables.xml) and your're good to go.
 
 </br>

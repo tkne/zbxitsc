@@ -1,22 +1,20 @@
-Disk IO status check for Zabbix agent on Ubuntu 18.04 (Bionic Beaver)
-======
+# Disk IO status check for Zabbix agent on Ubuntu 18.04 (Bionic Beaver)
 
-This guide assumes that the Zabbix agent user config path is set to `/etc/zabbix/zabbix_agentd.d/` or `/etc/zabbix/zabbix_agentd.d/*.conf`.
+> This guide assumes that the Zabbix agent user config path is set to `/etc/zabbix/zabbix_agentd.d/` or `/etc/zabbix/zabbix_agentd.d/*.conf`.
 
-**Make sure to install GLLD on the Zabbix server first before you proceed:** </br>
-↪ https://github.com/tkne/zbxitsc/tree/master/GLLD#graph-low-level-discovery-for-zabbix
+Make sure to install GLLD on the Zabbix server first before you proceed:</br>
+https://github.com/tkne/zbxitsc/tree/master/GLLD#graph-low-level-discovery-for-zabbix
 
 </br>
 
-Install via shell script:
+## Installation via shell script
 ```bash
 wget -O - https://raw.githubusercontent.com/tkne/zbxitsc/master/Disk%20IO/Ubuntu1804/Shell%20Script/diskio_install.sh | bash
 ```
 
 </br>
 
-Installation guide using step by step instructions:
-
+## Installation guide using step by step instructions
 Create a new file called `iostat.conf` within the `/etc/zabbix/zabbix_agentd.d/` directory:
 ```bash
 nano /etc/zabbix/zabbix_agentd.d/iostat.conf
@@ -89,7 +87,10 @@ systemctl restart zabbix-agent
 When done, import the [**Template Disk IO**](https://github.com/tkne/zbxitsc/blob/master/Disk%20IO/Template/Template%20Disk%20IO.xml).
 Remember, the discovery update interval for this template is set to a default of one hour (1h). You can set it to something lower (i.e. 1m) while you are setting up to speed things up.
 
-**Next**: proceed with the [**Graph template setup and creation via Zabbix GUI**](https://github.com/tkne/zbxitsc/tree/master/GLLD#graph-template-setup-and-creation-via-zabbix-gui).
+</br>
+
+### Next
+Proceed with the [**Graph template setup and creation via Zabbix GUI**](https://github.com/tkne/zbxitsc/tree/master/GLLD#graph-template-setup-and-creation-via-zabbix-gui).
 
 </br>
 

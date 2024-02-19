@@ -1,10 +1,10 @@
-iptables status check for Zabbix agent on Debian 6 (Squeeze)
-======
+# iptables status check for Zabbix agent on Debian 6 (Squeeze)
 
-This guide assumes that the Zabbix agent user config path is set to `/etc/zabbix/zabbix_agentd.d/` or `/etc/zabbix/zabbix_agentd.d/*.conf`, and that the iptables-persistent service is utilized as the system's firewall. If you encounter any issues, please refer to the [troubleshooting](#troubleshooting) section at the bottom of this installation guide.
+> This guide assumes that the Zabbix agent user config path is set to `/etc/zabbix/zabbix_agentd.d/` or `/etc/zabbix/zabbix_agentd.d/*.conf`, and that the iptables-persistent service is utilized as the system's firewall. If you encounter any issues, please refer to the [troubleshooting](#troubleshooting) section at the bottom of this installation guide.
 
 </br>
 
+## Prerequisites
 First we need to modify the Sudoers file located at `/etc/sudoers` via the `visudo` command:
 ```bash
 visudo
@@ -20,7 +20,7 @@ zabbix  ALL=(ALL) NOPASSWD: /usr/local/bin/iptablescheck.sh
 
 </br>
 
-Install via shell script:
+## Installation via shell script
 > [!IMPORTANT]
 > Please update manually using step by step instructions.
 > 
@@ -28,8 +28,7 @@ Install via shell script:
 
 </br>
 
-Installation guide using step by step instructions:
-
+## Installation guide using step by step instructions
 Create a new file called `iptables.conf` within the `/etc/zabbix/zabbix_agentd.d/` directory:
 ```bash
 nano /etc/zabbix/zabbix_agentd.d/iptables.conf
@@ -90,6 +89,7 @@ service zabbix-agent restart
 
 </br>
 
+### Next
 When done, import the [**Template Linux OS - Iptables template**](https://github.com/tkne/zbxitsc/blob/master/Iptables/Template/Template%20Linux%20OS%20-%20Iptables.xml) and your're good to go.
 
 </br>
