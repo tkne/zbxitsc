@@ -17,8 +17,8 @@ Please note that the backup procedure may vary depending on the specific version
 </br>
 
 ## Step-by-Step Guides
-- [Backup and Restore procedure using Percona XtraBackup 2.4](https://raw.githubusercontent.com/tkne/zbxitsc/master/SQL%20Backup/xtrabackup/)
-- [Backup and Restore procedure using Mariabackup](https://raw.githubusercontent.com/tkne/zbxitsc/master/SQL%20Backup/mariabackup/)
+- [Backup and Restore procedure using Percona XtraBackup 2.4](https://github.com/tkne/zbxitsc/tree/master/SQL%20Backup/xtrabackup)
+- [Backup and Restore procedure using Mariabackup](https://github.com/tkne/zbxitsc/tree/master/SQL%20Backup/mariabackup/)
 
 #### Addendum
-- [LAN IP to LAN IP access via public IP hop](https://raw.githubusercontent.com/tkne/zbxitsc/master/SQL%20Backup/addendum/)
+- [LAN IP to LAN IP access via public IP hop](https://github.com/tkne/zbxitsc/tree/master/SQL%20Backup/addendum/)
