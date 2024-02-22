@@ -7,5 +7,5 @@ Dump of various plugins, scripts, configs and templates with added installation 
 - [Graph Low Level Discovery for Zabbix v3.4.x (Linux)](https://github.com/tkne/zbxitsc/tree/master/GLLD)
 - [Iostat check for Zabbix (Linux)](https://github.com/tkne/zbxitsc/tree/master/Iostat)
 - [Iptables status check for Zabbix (Linux)](https://github.com/tkne/zbxitsc/tree/master/Iptables)
-- [SQL database backup for Zabbix (Linux)](https://github.com/tkne/zbxitsc/tree/master/SQL%20Backup)
+- [SQL database backup & restore for Zabbix (Linux)](https://github.com/tkne/zbxitsc/tree/master/SQL%20Backup)
 - [Zabbix Agent Install (Linux)](https://github.com/tkne/zbxitsc/tree/master/Zabbix%20Agent%20Install)
