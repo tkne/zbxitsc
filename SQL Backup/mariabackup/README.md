@@ -121,7 +121,7 @@ systemctl restart crond
 </br>
 
 > [!TIP]
-> Check the addendum [LAN IP to LAN IP access via public IP hop](https://raw.githubusercontent.com/tkne/zbxitsc/master/SQL%20Backup/addendum/) guide if in need for a similar setup.
+> Check the addendum [LAN IP to LAN IP access via public IP hop](https://github.com/tkne/zbxitsc/tree/master/SQL%20Backup/addendum/) guide if in need for a similar setup.
 
 </br>
 </br>
